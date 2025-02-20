@@ -4,8 +4,8 @@
 // Criando a estrutura básica para o Super Trunfo em linguagem C
 // Chamando as funções
 int main() {
-    #Chamando a função locale e passando que o idioma como língua portuguesa
-    setLocale(LC_ALL, "Portuguese");
+    //Chamando a função locale e passando que o idioma como língua portuguesa
+    setlocale(LC_ALL, "Portuguese");
 
     char Estado[10], Estado2[10];
     char Codigo[10], Codigo2[10];
@@ -19,56 +19,55 @@ int main() {
     printf("\n--- CARTA 1 ---\n");
     printf("Digite uma letra de 'A' a 'H'(representando um dos oito estados): \n");
 
-    printf("Estado: \n", Estado); 
+    printf("Estado: \n"); 
     scanf("%s", Estado);
 
     printf("O código contém o estado + o número da cidade\n");
     printf("EX: A01, B02, C03, D04, E05, F06, G07, H08\n");
     
-    printf("Código: \n", Codigo);
+    printf("Código: \n");
     scanf("%s", Codigo);
 
     printf("Nome da Cidade: \n");
     fgets(Nome_da_cidade, 50, stdin);
 
-    printf("População: habitantes\n", Populacao);
+    printf("População: habitantes\n");
     scanf("%f", &Populacao);
 
     printf("Área: km²\n", Area);
     scanf("%f", &Area);
 
-    printf("PIB: bilhões de reais\n", PIB);
+    printf("PIB: bilhões de reais\n");
     scanf("%f", &PIB);
 
-    printf("Número de Pontos Turísticos: \n", Numero_de_pontos_turisticos);
+    printf("Número de Pontos Turísticos: \n");
     scanf("%d", &Numero_de_pontos_turisticos);
 
     // Solicitando informações para a 2º carta
     printf("\n--- CARTA 2 ---\n");
     printf("\n--- Informações da Cidade ---\n");
     
-    printf("Obs: Se o nome da cidade conter acentos(não digite-os) ou espaços(troque por _)\n");
     printf("Estado: \n", Estado2);
     scanf("%s", Estado2);
 
     printf("O código contem o estado + o número da cidade\n");
     printf("EX: A01, B02, C03, D04, E05, F06, G07, H08\n");
-    printf("Código: \n", Codigo2);
+    printf("Código: \n");
     scanf("%s", Codigo2);
 
     printf("Nome da Cidade: \n");
     fgets(Nome_da_cidade2, 50, stdin);
 
-    printf("População: habitantes\n", Populacao2);
+    printf("População: habitantes\n");
     scanf("%f", &Populacao2);
 
-    printf("Área: km²\n", Area2);
+    printf("Área: km²\n");
     scanf("%f", &Area2);
 
-    printf("PIB: bilhões de reais\n", PIB2);
+    printf("PIB: bilhões de reais\n");
     scanf("%f", &PIB2);
     
-    printf("Número de Pontos Turísticos: \n", Numero_de_pontos_turisticos2);
+    printf("Número de Pontos Turísticos: \n");
     scanf("%d", &Numero_de_pontos_turisticos2);
 
     // Exibe as informações digitadas pelo usuário
